@@ -18,8 +18,8 @@ import javax.swing.JButton;
 import javax.swing.JOptionPane;
 
 /**
- *
- * @author culne
+ Milagros Foti 256278
+ Alejandro Culñev 276792
  */
 public class RegistrarCarga extends javax.swing.JFrame implements PropertyChangeListener {
 
@@ -470,6 +470,7 @@ public class RegistrarCarga extends javax.swing.JFrame implements PropertyChange
 
     private void btnIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarActionPerformed
         if (modelo.getCarga(fila, columna, area) == null) {
+            //Vacio
             int func = listaFuncionarios.getSelectedIndex();
             int art = listaArticulos.getSelectedIndex();
 
@@ -635,6 +636,7 @@ public class RegistrarCarga extends javax.swing.JFrame implements PropertyChange
 
         @Override
         public void actionPerformed(ActionEvent e) {
+            // este código se ejecutará al presionar el botón, obtengo cuál botón
             JButton cual = ((JButton) e.getSource());
             cual.setBackground(Color.RED);
             anterior.setBackground(Color.BLACK);
@@ -656,6 +658,7 @@ public class RegistrarCarga extends javax.swing.JFrame implements PropertyChange
     private void actualizarListaFuncionarios() {
         DefaultListModel listModel = new DefaultListModel();
         for (int i = 0; i < modelo.getListaFuncionarios().size(); i++) {
+            //Añadir cada elemento del ArrayList en el modelo de la lista
             listModel.add(i, modelo.getListaFuncionarios().get(i).getNombre());
         }
         listaFuncionarios.setModel(listModel);
@@ -664,6 +667,7 @@ public class RegistrarCarga extends javax.swing.JFrame implements PropertyChange
     private void actualizarListaArticulos() {
         DefaultListModel listModel = new DefaultListModel();
         for (int i = 0; i < modelo.getListaArticulos().size(); i++) {
+            //Añadir cada elemento del ArrayList en el modelo de la lista
             listModel.add(i, modelo.getListaArticulos().get(i).getNombre());
         }
         listaArticulos.setModel(listModel);

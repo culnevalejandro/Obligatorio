@@ -17,8 +17,8 @@ import javax.swing.table.TableColumn;
 import manejoArchivos.ArchivoLectura;
 
 /**
- *
- * @author culne
+ Milagros Foti 256278
+ Alejandro Culñev 276792
  */
 public class RegistrarVuelo extends javax.swing.JFrame  {
 

@@ -8,8 +8,8 @@ import java.io.Serializable;
 import java.util.*;
 
 /**
- *
- * @author culne
+ Milagros Foti 256278
+ Alejandro Culñev 276792
  */
 public class Drone implements Serializable{
     private String id;

@@ -9,8 +9,8 @@ import java.beans.PropertyChangeListener;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 /**
- *
- * @author culne
+ Milagros Foti 256278
+ Alejandro Culñev 276792
  */
 public class RegistrarArticulo extends javax.swing.JFrame implements PropertyChangeListener {
 

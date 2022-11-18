@@ -7,8 +7,8 @@ package dominio;
 import java.io.Serializable;
 
 /**
- *
- * @author culne
+ Milagros Foti 256278
+ Alejandro Culñev 276792
  */
 public class Vuelo implements Serializable{
     private Drone Dron;

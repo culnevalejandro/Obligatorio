@@ -7,8 +7,8 @@ package dominio;
 import java.io.Serializable;
 
 /**
- *
- * @author culne
+ Milagros Foti 256278
+ Alejandro Culñev 276792
  */
 public class Funcionario implements Serializable{
     private String nombre;

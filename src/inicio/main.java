@@ -5,8 +5,8 @@ import dominio.*;
 import java.io.*;
 
 /**
- *
- * @author culne
+ Milagros Foti 256278
+ Alejandro Culñev 276792
  */
 public class main {
 

@@ -7,8 +7,8 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 
 /**
- *
- * @author culne
+ Milagros Foti 256278
+ Alejandro Culñev 276792
  */
 public class VentanaPrincipal extends javax.swing.JFrame {
 

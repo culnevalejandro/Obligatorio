@@ -10,8 +10,8 @@ import java.beans.PropertyChangeListener;
 import javax.swing.DefaultListModel;
 
 /**
- *
- * @author culne
+ Milagros Foti 256278
+ Alejandro Culñev 276792
  */
 public class EstadisticasVuelos extends javax.swing.JFrame implements PropertyChangeListener{
 

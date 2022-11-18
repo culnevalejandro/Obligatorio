@@ -10,8 +10,8 @@ import java.io.Serializable;
 import java.util.*;
 
 /**
- *
- * @author culne
+ Milagros Foti 256278
+ Alejandro Culñev 276792
  */
 public class Sistema implements Serializable {
 
@@ -76,6 +76,7 @@ public class Sistema implements Serializable {
     }
 
     public void actualizarListaDrones() {
+        //se agrega en lista de los vuelos
         this.listaDronesSinVuelo.clear();
         this.listaDronesConVuelo.clear();
 
