@@ -131,7 +131,6 @@ public class Vuelo implements Serializable{
         return aux;
     }
     
-    //ARREGLAR EL RESTO Y SACAR SWICHS NO NECESARIOS
     
     @Override
     public String toString(){   

@@ -11,11 +11,9 @@ import java.io.File;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.*;
-import javax.swing.border.MatteBorder;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.TableColumn;
-import javax.swing.text.Element;
 import manejoArchivos.ArchivoLectura;
 
 /**
@@ -187,9 +185,9 @@ public class RegistrarVuelo extends javax.swing.JFrame  {
     private void archivosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_archivosActionPerformed
         if (evt.getActionCommand().equals("ApproveSelection")) {
             Vuelo vuelo = this.registrarVuelo(archivos.getSelectedFile().getAbsolutePath());
-            if (vuelo.isExitoso()) { //si el vuelo es exitoso lo muestro en la tabla
-                int[] datosArchivos = vuelo.getCodigosDeCargas();//info pa cargar tabla
-                boolean[] comparacion = comparacionManualArchivo(vuelo);//d q color cargo
+            if (vuelo.isExitoso()) { 
+                int[] datosArchivos = vuelo.getCodigosDeCargas();
+                boolean[] comparacion = comparacionManualArchivo(vuelo);
                 Carga[] aux = modelo.getCargaEnFila(vuelo.getFila(), vuelo.getAreaNro());
                 int[] datosManuales = new int[10];
                 for (int i = 0; i < 10; i++) {
@@ -222,7 +220,7 @@ public class RegistrarVuelo extends javax.swing.JFrame  {
             }
 
         } else {
-            //CANCELAR
+            
             setTablaVacia();
             
             
@@ -289,7 +287,7 @@ public class RegistrarVuelo extends javax.swing.JFrame  {
         int fila = Integer.parseInt(partes[1]);
 
         Vuelo vuelo = new Vuelo(modelo.getDroneSegunId(id), area, fila - 1, archivo.getName(), false);
-        modelo.agregarVuelo(vuelo,id); //agregar vuelo al dron corrspondiente
+        modelo.agregarVuelo(vuelo,id);
         int cantLineas = 0;
         String auxCodigos = "";
         while (al.hayMasLineas()) {
@@ -372,7 +370,6 @@ public class RegistrarVuelo extends javax.swing.JFrame  {
     
     
     
-    //COLORES TABLA
     private class Render extends DefaultTableCellRenderer {
 
         Color backgroundColor;

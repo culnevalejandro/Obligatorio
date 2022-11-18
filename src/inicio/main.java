@@ -3,8 +3,6 @@ package inicio;
 import interfaz.*;
 import dominio.*;
 import java.io.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *

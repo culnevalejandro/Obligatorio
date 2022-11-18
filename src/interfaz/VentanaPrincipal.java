@@ -19,7 +19,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
      *
      * @param unSistema
      */
-    public VentanaPrincipal(Sistema unSistema) { //constructor
+    public VentanaPrincipal(Sistema unSistema) {
         initComponents();
         this.modelo = unSistema;
     }

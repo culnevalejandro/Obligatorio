@@ -76,7 +76,6 @@ public class Sistema implements Serializable {
     }
 
     public void actualizarListaDrones() {
-        //se agrega en lista de los vuelos
         this.listaDronesSinVuelo.clear();
         this.listaDronesConVuelo.clear();
 
